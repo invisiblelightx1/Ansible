@@ -1,0 +1,17 @@
+---
+- name: Install Docker and Rancher
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Add Docker apt repository
+      apt_repository:
+        repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable
+        state: present
+        update_cache: yes
+    - name: Install Docker
+      apt:
+        name: docker-ce
+        state: present
+    - name: Install Rancher
+      shell: docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
