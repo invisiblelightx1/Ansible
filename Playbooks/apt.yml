@@ -1,7 +1,9 @@
-- hosts: "*"
-  become: yes
-  tasks:
-    - name: apt
-      apt:
-        update_cache: yes
-        upgrade: 'yes'
+name: Update
+hosts: all
+
+become: true
+tasks:
+  - name: apt update packages
+    apt:
+       upgrade: yes
+       upgrade_cache: yes
