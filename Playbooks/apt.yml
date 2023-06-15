@@ -3,7 +3,12 @@
 
   become: true
   tasks:
-    - name: Apt update packages
+    - name: Apt update cache
+      apt:
+        update_cache: true
+
+    - name:   Upgrade packages
       apt:
         upgrade: yes
-        update_cache: true
+        autoremove: yes
+        autoclean: yes     
