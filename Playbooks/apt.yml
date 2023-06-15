@@ -1,4 +1,5 @@
 ---
+name: apt update
 - hosts: all
 
   become: true
