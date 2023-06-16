@@ -7,7 +7,7 @@
       apt:
         update_cache: true
 
-    - name:   Upgrade packages
+    - name: Upgrade packages
       apt:
         upgrade: yes
         autoremove: yes
