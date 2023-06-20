@@ -1,0 +1,6 @@
+---
+ - name: clouddvr
+   hosts: Portainer
+   become: true
+   tasks:
+    - name: install plex     
