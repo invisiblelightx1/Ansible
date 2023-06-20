@@ -1,6 +1,20 @@
 ---
  - name: clouddvr
-   hosts: Portainer
+   hosts: node0a
    become: true
    tasks:
     - name: install plex     
+
+    - name: install sonarr
+
+    - name: install radarr
+
+    - name: install prowler
+
+    - name: install unpackerr
+
+    - name: install delugevpn
+
+    - name: install flaresolver
+
+
