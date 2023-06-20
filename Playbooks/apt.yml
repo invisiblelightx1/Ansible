@@ -1,5 +1,5 @@
 ---
- - name:
+ - name: Apt update & upgrade
    hosts: all
    become: true
    tasks:
