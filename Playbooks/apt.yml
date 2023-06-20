@@ -1,11 +1,12 @@
 ---
-- hosts: all
-
-  become: true
-  tasks:
+ - name:
+   hosts: all
+   become: true
+   tasks:
     - name: Apt update cache
       apt:
         update_cache: true
+        lock_timeout: 120
 
     - name: Upgrade packages
       apt:
