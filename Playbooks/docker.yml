@@ -1,5 +1,5 @@
 - name: Install Docker engine
-  hosts: Portainer
+  hosts: rancher
   become: true
   tasks:
   - name: Install depdencies
