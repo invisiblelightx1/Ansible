@@ -5,6 +5,7 @@ k82.dial4tech.com
 k83.dial4tech.com
 node0a.dial4tech.com
 node0b.dial4tech.com
+ansible.dial4tech.com
 
 [rancher]
 k8.dial4tech.com
@@ -15,3 +16,6 @@ k83.dial4tech.com
 [Portainer]
 node0a.dial4tech.com
 node0b.dial4tech.com
+
+[Ansible]
+ansible.dial4tech.com
