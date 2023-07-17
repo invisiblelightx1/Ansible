@@ -2,7 +2,7 @@
   hosts: rancher
   become: true
   tasks:
-  - name: Install depdencies
+   - name: Install depdencies
     apt:
       name:
        - ca-certificates
@@ -13,18 +13,18 @@
       update_cache: true
     become: true
 
-  - name: Add GPG key
-    apt_key:
+   - name: Add GPG key
+     apt_key:
       url: https://download.docker.com/linux/ubuntu/gpg
       state: present
 
-  - name: Add docker repository to apt
-    apt_repository:
+   - name: Add docker repository to apt
+     apt_repository:
       filename: docker
       repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
       state: present
 
-  - name: Install docker engine
+   - name: Install docker engine
     apt:
       name:
         - docker-ce
@@ -34,6 +34,6 @@
       update_cache: true
     become: true
 
-  - name: Test docker
-    command: docker info
-    become: true
+   - name: Test docker
+     command: docker info
+     become: true
