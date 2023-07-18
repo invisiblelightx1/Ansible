@@ -17,5 +17,8 @@ k83.dial4tech.com
 node0a.dial4tech.com
 node0b.dial4tech.com
 
-[Ansible]
-ansible.dial4tech.com
+[local]
+127.0.0.1
+
+[local:vars]
+ansible_connection=local
