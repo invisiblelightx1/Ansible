@@ -1,5 +1,5 @@
 ---
-- name: Install GitHub
+- name: Install github-cli
   hosts: all
   become: true
   tasks:
@@ -9,7 +9,7 @@
        state: present
   - name: Add GitHub repository to apt
     apt_repository:
-      filename: github-cli
+      filename: gh
       repo: deb [arch=amd64] https://cli.github.com/packages stable main
       state: present
   - name: Install GitHub
