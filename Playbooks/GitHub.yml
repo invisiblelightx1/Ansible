@@ -15,7 +15,7 @@
   - name: Install GitHub
     apt:
        name:
-        - gh
+         - gh
        state: present
        update_cache: true
     become: true
