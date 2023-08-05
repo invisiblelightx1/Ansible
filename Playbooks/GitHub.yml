@@ -9,13 +9,13 @@
        state: present
   - name: Add GitHub repository to apt
     apt_repository:
-      filename: docker
+      filename: github-cli
       repo: deb [arch=amd64] https://cli.github.com/packages stable main
       state: present
   - name: Install GitHub
     apt:
        name:
-         - gh
+        - gh
        state: present
        update_cache: true
     become: true
