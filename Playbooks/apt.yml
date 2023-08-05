@@ -3,15 +3,15 @@
    hosts: all
    become: true
    tasks:
-    - name: Apt update cache
-      apt:
-        update_cache: true
-        lock_timeout: 120
-      become: true
+   - name: Apt update cache
+     apt:
+      update_cache: true
+      lock_timeout: 120
+     become: true
 
-    - name: Upgrade packages
-      apt:
-        upgrade: yes
-        autoremove: yes
-        autoclean: yes
-      become: true
+   - name: Upgrade packages
+     apt:
+      upgrade: yes
+      autoremove: yes
+      autoclean: yes
+     become: true
