@@ -3,19 +3,19 @@
   hosts: all
   become: true
   tasks:
-    - name: Add GPG key
+    - name: add GPG key
       apt_key:
-       url: https://cli.github.com/packages/githubcli-archive-keyring.gpg
-       state: present
-    - name: Add GitHub repository to apt
+        url: https://cli.github.com/packages/githubcli-archive-keyring.gpg
+        state: present
+    - name: add gitHub repository to apt
       apt_repository:
-       filename: gh
-       repo: deb [arch=amd64] https://cli.github.com/packages stable main
-       state: present
-    - name: Install GitHub
+        filename: gh
+        repo: deb [arch=amd64] https://cli.github.com/packages stable main
+        state: present
+    - name: install gitHub
       apt:
-       name:
-          - gh
-       state: present
-       update_cache: true
+        name:
+           - gh
+        state: present
+        update_cache: true
       become: true
