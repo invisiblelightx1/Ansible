@@ -1,9 +1,9 @@
 ---
- - name: clouddvr
-   hosts: node0a
-   become: true
-   tasks:
-    - name: install plex     
+- name: clouddvr
+  hosts: all
+  become: true
+  tasks:
+    - name: install plex
 
     - name: install sonarr
 
