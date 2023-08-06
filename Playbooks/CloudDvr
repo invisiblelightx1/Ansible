@@ -4,17 +4,31 @@
   become: true
   tasks:
     - name: install plex
+      ansible.builtin.shell:
+        cmd: 
 
     - name: install sonarr
+      ansible.builtin.shell:
+        cmd:
 
     - name: install radarr
+      ansible.builtin.shell:
+        cmd:
 
-    - name: install prowler
+    - name: install prowlarr
+      ansible.builtin.shell:
+        cmd:
 
     - name: install unpackerr
+      ansible.builtin.shell:
+        cmd:
 
     - name: install delugevpn
+      ansible.builtin.shell:
+        cmd: 
 
     - name: install flaresolver
+      ansible.builtin.shell:
+        cmd: 
 
 
