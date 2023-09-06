@@ -1,0 +1,6 @@
+---
+name: Teleport
+hosts: Cloud
+become: true
+tasks:
+ - name: 
