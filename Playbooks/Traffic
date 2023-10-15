@@ -1,0 +1,12 @@
+---
+- name: Install Portainer
+  hosts: Cloud
+  become: true
+  tasks:
+    - name:  create volume
+      ansible.builtin.shell:
+        cmd: docker volume create portainer_data
+      
+    - name: install portainer  
+      ansible.builtin.shell:
+        cmd: docker run -d
