@@ -1,0 +1,12 @@
+---
+- name: Install overseerr
+  hosts: Cloud
+  become: true
+  tasks:
+    - name: Create volume
+      ansible.builtin.shell:
+        cmd: docker volume create overseerr_data
+      
+    - name: Install overseerr  
+      ansible.builtin.shell:
+        cmd: docker run -d --name overseerr -e LOG_LEVEL=debug -e TZ=America/Los_Angeles -e PORT=5055 `#optional` -p 5055:5055 -v overseerr_data:/data \--restart unless-stopped \sctx/overseerr 
