@@ -9,4 +9,4 @@
       
     - name: Install overseerr  
       ansible.builtin.shell:
-        cmd: docker run -d --name overseerr -e LOG_LEVEL=debug -e TZ=America/Los_Angeles -e PORT=5055 `#optional` -p 5055:5055 -v overseerr_data:/data \--restart unless-stopped \sctx/overseerr 
+        cmd: docker run -d --name overseerr -e LOG_LEVEL=debug -e TZ=America/Los_Angeles -e PORT=5055 `#optional` -p 5055:5055 -v overseerr_data:/app/config \--restart unless-stopped \sctx/overseerr 
