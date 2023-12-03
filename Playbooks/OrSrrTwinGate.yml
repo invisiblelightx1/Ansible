@@ -1,6 +1,6 @@
 ---
 - name: OvrSrrTwingate
-  hosts: Linode
+  hosts: Cloud
   become: true
   tasks:
     - name: Twingate Auth
