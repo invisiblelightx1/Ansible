@@ -2,9 +2,14 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "Docker",
+			"path": "../../../../../home/swordsaint/Docker"
 		}
 	],
 	"settings": {
-		"ansible.python.interpreterPath": "/bin/python3"
+		"ansible.python.interpreterPath": "/bin/python3",
+		"ansible.executionEnvironment.volumeMounts": []
 	}
 }
