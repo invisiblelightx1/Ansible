@@ -1,0 +1,10 @@
+---
+- name: OvrSrrTwingate
+  hosts: Linode
+  become: true
+  tasks:
+    - name: Twingate Auth
+      ansible.builtin.shell:
+        cmd: twingate auth sonarr ; twingate auth radarr ; twingate auth Tautulli
+
+
