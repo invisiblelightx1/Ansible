@@ -1,3 +1,4 @@
 {
-    "ansible.executionEnvironment.enabled": false
+    "ansible.executionEnvironment.enabled": false,
+    "ansible.python.interpreterPath": "/bin/python3"
 }
