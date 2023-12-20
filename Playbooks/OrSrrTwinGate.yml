@@ -7,4 +7,6 @@
       ansible.builtin.shell:
         cmd: twingate auth sonarr ; twingate auth radarr ; twingate auth Tautulli
 
-
+    - name:
+      cron:
+       name: Auth Twingate 
