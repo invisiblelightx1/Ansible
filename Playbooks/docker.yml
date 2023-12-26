@@ -1,9 +1,9 @@
 ---
-- name: Install Docker engine
+- name: Install Docker Engine
   hosts: all
   become: true
   tasks:
-  - name: Install dependices
+  - name: Install Dependices
     apt:
       name:
         - ca-certificates
@@ -14,18 +14,18 @@
       update_cache: true
     become: true
 
-  - name: Add GPG key
+  - name: Add GPG Key
     apt_key:
       url: https://download.docker.com/linux/ubuntu/gpg
       state: present
 
-  - name: Add docker repository to apt
+  - name: Add Docker Repo to Apt
     apt_repository:
       filename: docker
       repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
       state: present
 
-  - name: Install docker engine
+  - name: Install Docker Engine
     apt:
       name:
         - docker-ce
