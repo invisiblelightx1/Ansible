@@ -8,6 +8,7 @@ node0b.dial4tech.com
 Linode.dial4tech.com
 aws.dial4tech.com
 cloud0.dial4tech.com:2022
+cloud1.dial4tech.com
 
 [rancher]
 k8.dial4tech.com
@@ -21,8 +22,9 @@ node0b.dial4tech.com
 
 [Cloud]
 Linode.dial4tech.com
-aws.dial4tech.com
+#aws.dial4tech.com
 cloud0.dial4tech.com:2022
+cloud1.dial4tech.com
 
 [Rhel]
 tower.dial4tech
