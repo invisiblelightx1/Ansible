@@ -1,11 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "."
-		},
-		{
-			"name": "Docker",
-			"path": "../../../../../home/swordsaint/Docker"
+			"path": ".."
 		}
 	],
 	"settings": {
